@@ -16,6 +16,8 @@
 		364AFF2C27EA4D580065BB29 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364AFF2B27EA4D580065BB29 /* KeyboardViewController.swift */; };
 		364AFF2E27EA4D750065BB29 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364AFF2D27EA4D750065BB29 /* BoardViewController.swift */; };
 		364AFF3027EBAFA30065BB29 /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364AFF2F27EBAFA30065BB29 /* KeyCell.swift */; };
+		364AFF3D27EE29B90065BB29 /* KeyboardViewControllerDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364AFF3C27EE29B80065BB29 /* KeyboardViewControllerDelegateProtocol.swift */; };
+		364AFF3F27EE2BAA0065BB29 /* BoardViewControllerDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364AFF3E27EE2BAA0065BB29 /* BoardViewControllerDataSourceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		364AFF2B27EA4D580065BB29 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		364AFF2D27EA4D750065BB29 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 		364AFF2F27EBAFA30065BB29 /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
+		364AFF3C27EE29B80065BB29 /* KeyboardViewControllerDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewControllerDelegateProtocol.swift; sourceTree = "<group>"; };
+		364AFF3E27EE2BAA0065BB29 /* BoardViewControllerDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewControllerDataSourceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,18 @@
 				364AFF2B27EA4D580065BB29 /* KeyboardViewController.swift */,
 				364AFF2D27EA4D750065BB29 /* BoardViewController.swift */,
 				364AFF2F27EBAFA30065BB29 /* KeyCell.swift */,
+				364AFF4027EE35970065BB29 /* Protocols */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		364AFF4027EE35970065BB29 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				364AFF3C27EE29B80065BB29 /* KeyboardViewControllerDelegateProtocol.swift */,
+				364AFF3E27EE2BAA0065BB29 /* BoardViewControllerDataSourceProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +187,8 @@
 			files = (
 				364AFF1927EA4C900065BB29 /* ViewController.swift in Sources */,
 				364AFF1527EA4C900065BB29 /* AppDelegate.swift in Sources */,
+				364AFF3F27EE2BAA0065BB29 /* BoardViewControllerDataSourceProtocol.swift in Sources */,
+				364AFF3D27EE29B90065BB29 /* KeyboardViewControllerDelegateProtocol.swift in Sources */,
 				364AFF1727EA4C900065BB29 /* SceneDelegate.swift in Sources */,
 				364AFF3027EBAFA30065BB29 /* KeyCell.swift in Sources */,
 				364AFF2C27EA4D580065BB29 /* KeyboardViewController.swift in Sources */,
