@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import UIKit
 
 protocol BoardViewControllerDataSource: AnyObject {
   var currentGuesses: [[Character?]] { get }
+  func boxColor(at indexPath: IndexPath) -> UIColor?
 }

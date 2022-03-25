@@ -54,7 +54,7 @@ extension BoardViewController {
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KeyCell.identifier, for: indexPath) as? KeyCell else { fatalError() }
-    cell.backgroundColor = nil
+    cell.backgroundColor = datasource?.boxColor(at: indexPath)
     cell.layer.borderWidth = 1
     cell.layer.borderColor = UIColor.systemGray3.cgColor
     let guesses = datasource?.currentGuesses ?? []
@@ -75,6 +75,5 @@ extension BoardViewController {
   }
 
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    <#code#>
   }
 }

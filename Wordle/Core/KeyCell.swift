@@ -16,14 +16,14 @@ class KeyCell: UICollectionViewCell {
     label.translatesAutoresizingMaskIntoConstraints = false
     label.textColor = .white
     label.textAlignment = .center
-    label.font = .systemFont(ofSize: 18, weight: .medium)
+    label.font = .systemFont(ofSize: 18, weight: .bold)
     return label
   }()
 
   //MARK: - Init's
   override init(frame: CGRect) {
     super.init(frame: frame)
-    backgroundColor = .systemGray5
+    backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
     contentView.addSubview(label)
     NSLayoutConstraint.activate([
       label.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
